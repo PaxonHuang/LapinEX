@@ -1,0 +1,298 @@
+# Butterfly Theme Configuration
+# https://butterfly.js.org/
+
+# ===================================================
+# Site Settings (站点设置)
+# ===================================================
+# Change the favicon (更改图标)
+favicon: /img/favicon.ico
+
+# Change the avatar (更改头像)
+avatar:
+  img: /img/logo.svg
+  effect: true
+
+# Change the default cover image (更改默认封面)
+default_cover: /img/hero-bg.svg
+
+# Set the default top image (设置默认顶部图片)
+index_img: /img/hero-bg.svg
+archive_img: /img/hero-bg.svg
+category_img: /img/hero-bg.svg
+tag_img: /img/hero-bg.svg
+
+# ===================================================
+# Menu Settings (菜单设置)
+# ===================================================
+# Usage: `Key: /link/ || icon`
+# Key is the name of menu item. If the translation for this Key is available, the translated text will be loaded, otherwise the Key name will be used. Key is case-sensitive.
+# Value before `||` delimeter is the target link, value after `||` delimeter is the name of Font Awesome icon. If icon is not specified, the question icon will be loaded.
+# When running the site in a subdirectory (e.g. yoursite.com/blog), remove the leading slash from link value (/archives -> archives).
+# External link should start with http:// or https://
+menu:
+  首页: / || fas fa-home
+  协会介绍:
+    关于LapinEX-70X: /about/ || fas fa-users
+    技术团队: /teams/ || fas fa-code
+    联系我们: /contact/ || fas fa-envelope
+    
+  加入我们:
+    招聘岗位: /jobs/ || fas fa-briefcase
+    申请表下载: /jobs/application-form/ || fas fa-download
+  考研指导: /graduate/ || fas fa-graduation-cap
+  大厂就业: /employment/ || fas fa-building
+  项目展示: /projects/ || fas fa-rocket
+  
+
+# ===================================================
+# Social Links (社交链接)
+# ===================================================
+# Usage: `Key: permalink || icon`
+# Key is the link label showing to end users.
+# Value before `||` delimeter is the target permalink, value after `||` delimeter is the name of Font Awesome icon.
+social:
+  GitHub: https://github.com/LapinEX-70X || fab fa-github
+  QQ群: https://qm.qq.com/cgi-bin/qm/qr?k=xxx || fab fa-qq
+  微信公众号: /wechat/ || fab fa-weixin
+  邮箱: mailto:lapinex@example.com || fas fa-envelope
+
+# ===================================================
+# Page Settings (页面设置)
+# ===================================================
+# Disable top_img and put it to the background (禁用 top_img 并放到背景)
+disable_top_img: false
+
+# The position of the sidebar (侧边栏位置)
+# left | right (only for Pisces | Gemini)
+sidebar_position: right
+
+# Display menuitem with badge (显示带有徽章的菜单项)
+menu_settings:
+  external_link:
+    enable: false
+    icon: fas fa-external-link-alt
+
+# ===================================================
+# Post Settings (文章设置)
+# ===================================================
+# Set the default post cover image (设置默认文章封面)
+post_cover: /img/hero-bg.svg
+
+# Set the default post cover image for home page (为首页设置默认文章封面)
+index_cover: /img/hero-bg.svg
+
+# ===================================================
+# Aside (侧边栏)
+# ===================================================
+aside:
+  enable: true
+  hide: false
+  button: true
+  mobile: true # display on mobile
+  position: right # left or right
+  display:
+    archive: true
+    tag: true
+    category: true
+  card_author:
+    enable: true
+    description: LapinEX-70X 计算机协会
+    button:
+      enable: true
+      icon: fab fa-github
+      text: 加入我们
+      link: /join/
+  card_announcement:
+    enable: true
+    content: 🎉 欢迎加入 LapinEX-70X 计算机协会！我们致力于培养优秀的理工科人才。
+  card_recent_post:
+    enable: true
+    limit: 5
+    sort: date # date or updated
+    sort_order: -1 # 1, -1
+    exclude:
+      - /posts/
+  card_categories:
+    enable: true
+    limit: 8
+    sort: random # random, max
+    expand: none # none/true/false
+    sort_order: -1 # 1, -1
+  card_tags:
+    enable: true
+    limit: 40
+    color: false
+    sort: random # random, max
+    sort_order: -1 # 1, -1
+    exclude:
+      - 个人
+  card_archives:
+    enable: true
+    type: monthly
+    format: MMMM YYYY
+    order: -1
+    limit: 8
+    sort_order: -1
+    exclude:
+      - /archives/
+  card_webinfo:
+    enable: true
+    post_count: true
+    last_push_date: true
+    sort_order: -1
+
+# ===================================================
+# Footer Settings (页脚设置)
+# ===================================================
+footer:
+  owner:
+    enable: true
+    since: 2024
+  custom_text: LapinEX-70X 计算机协会 - 培养优秀计算机人才
+  icp:
+    enable: false
+    url: //beian.miit.gov.cn/
+    text: 京ICP备xxxxxxxx号-1
+  qr_code:
+    enable: false
+    img: /img/hero-bg.svg
+    link: /
+
+# ===================================================
+# Comment Settings (评论设置)
+# ===================================================
+comments:
+  use: # 'gitalk' | 'gitment' | 'valine' | 'disqus' | 'livere' | 'utterances' | 'twikoo' | 'waline' | 'giscus' | 'remark42' | 'artalk'
+  text: true # Display the comment name next to the social icon
+  order: 1 # 1: sort by time, 2: sort by time (descending)
+  card_post_count: false # The top 6 number of posts
+  count: false # Display comment count in post top area (主题配置文件中)
+  lazyload: false # Enable comment lazyload
+  count_per_page: 20 # The number of comments per page
+
+# ===================================================
+# Post Settings (文章设置)
+# ===================================================
+post:
+  # 文章版权声明
+  copyright: true
+  # 文章打赏
+  reward:
+    enable: false
+    QR_code:
+      - img: /img/hero-bg.svg
+        link:
+        text: 微信
+      - img: /img/hero-bg.svg
+        link:
+        text: 支付宝
+  # 文章目录
+  toc:
+    enable: true
+    number: true
+    expand: true
+    style_simple: false
+  # 文章推荐
+  related_post:
+    enable: true
+    limit: 6
+    date_type: created # created or updated
+  # 文章版权
+  copy:
+    enable: true
+    copyright: true
+  # 文章 meta 显示
+  meta:
+    page_meta_icon: fas fa-eye
+    wordcount_icon: fas fa-file-word
+    min2read_icon: fas fa-clock
+    readmode_icon: fas fa-adjust
+
+# ===================================================
+# Theme Color (主题色彩)
+# ===================================================
+theme_color:
+  enable: true
+  main: "#49b1f5"
+  paginator: "#00c4b6"
+  button_hover: "#FF7242"
+  text_selection: "#00c4b6"
+  link_color: "#99a9bf"
+  meta_color: "#858585"
+  hr_color: "#A4D8FA"
+  code_foreground: "#F47466"
+  code_background: "rgba(27, 31, 35, .05)"
+  toc_color: "#00c4b6"
+  blockquote_padding_color: "#49b1f5"
+  blockquote_background_color: "#49b1f5"
+
+# ===================================================
+# Loading Animation (加载动画)
+# ===================================================
+loading:
+  enable: false
+  image: /img/hero-bg.svg
+
+# ===================================================
+# Search (搜索)
+# ===================================================
+local_search:
+  enable: false
+
+# ===================================================
+# Math (数学)
+# ===================================================
+math:
+  enable: true
+  per_page: true
+  engine: mathjax # mathjax or katex
+  mathjax:
+    cdn: //cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+    config: TeX-AMS_HTML
+  katex:
+    cdn: //cdn.jsdelivr.net/npm/katex@0.12.0/dist/
+    config:
+      delimiters:
+        - left: $$
+          right: $$
+          display: true
+        - left: $
+          right: $
+          display: false
+        - left: \\
+          right: \\
+          display: true
+        - left: \\
+          right: \\
+          display: false
+
+# ===================================================
+# PWA (渐进式 Web 应用)
+# ===================================================
+pwa:
+  enable: false
+  manifest:
+    name: LapinEX-70X 计算机协会
+    short_name: LapinEX
+    description: 南京特师LapinEX-70X 计算机协会博客
+    theme_color: "#49b1f5"
+    background_color: "#49b1f5"
+    display: standalone
+    orientation: portrait
+    scope: /
+    start_url: /
+    icons:
+      - src: /img/pwa-192x192.png
+        sizes: 192x192
+        type: image/png
+      - src: /img/pwa-512x512.png
+        sizes: 512x512
+        type: image/png
+      - src: /img/pwa-maskable-192x192.png
+        sizes: 192x192
+        type: image/png
+        purpose: maskable
+      - src: /img/pwa-maskable-512x512.png
+        sizes: 512x512
+        type: image/png
+        purpose: maskable

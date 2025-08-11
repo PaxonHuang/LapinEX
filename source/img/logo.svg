@@ -1,0 +1,53 @@
+<svg width="200" height="200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#00d4ff;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#4ecdc4;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#96ceb4;stop-opacity:1" />
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge> 
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Background Circle -->
+  <circle cx="100" cy="100" r="90" fill="url(#logoGradient)" opacity="0.1"/>
+  
+  <!-- Rabbit Head -->
+  <ellipse cx="100" cy="120" rx="40" ry="35" fill="url(#logoGradient)" opacity="0.8"/>
+  
+  <!-- Rabbit Ears -->
+  <ellipse cx="85" cy="70" rx="8" ry="25" fill="url(#logoGradient)" opacity="0.8"/>
+  <ellipse cx="115" cy="70" rx="8" ry="25" fill="url(#logoGradient)" opacity="0.8"/>
+  
+  <!-- Rabbit Eyes -->
+  <circle cx="90" cy="110" r="3" fill="#1a1a2e"/>
+  <circle cx="110" cy="110" r="3" fill="#1a1a2e"/>
+  
+  <!-- Rabbit Nose -->
+  <ellipse cx="100" cy="125" rx="2" ry="1" fill="#1a1a2e"/>
+  
+  <!-- Circuit Board Elements -->
+  <g stroke="url(#logoGradient)" stroke-width="2" fill="none" opacity="0.6">
+    <path d="M 60 60 L 80 60 L 80 80 L 100 80"/>
+    <path d="M 120 60 L 140 60 L 140 80 L 120 80"/>
+    <path d="M 70 140 L 90 140 L 90 160 L 110 160 L 110 140 L 130 140"/>
+  </g>
+  
+  <!-- Code Elements -->
+  <g font-family="monospace" font-size="8" fill="url(#logoGradient)" opacity="0.7">
+    <text x="50" y="180">70X</text>
+    <text x="140" y="180">LapinEX</text>
+  </g>
+  
+  <!-- Glowing Points -->
+  <g filter="url(#glow)">
+    <circle cx="70" cy="70" r="2" fill="#00d4ff"/>
+    <circle cx="130" cy="70" r="2" fill="#4ecdc4"/>
+    <circle cx="100" cy="160" r="2" fill="#96ceb4"/>
+  </g>
+</svg>
