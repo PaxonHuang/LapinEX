@@ -1,0 +1,20 @@
+{
+  "path": "e:\\NJTS-Codeprojects-2023\\NodeJSReactVUE\\LapinEX-20250918\\LapinEXBlog0917\\public",
+  "desc": "LapinEX大学计算机社团博客网站 - 静态版本",
+  "id": "bd8fba649be14ed9b7668ad0dced6812",
+  "data": {
+    "spaceKey": "bd8fba649be14ed9b7668ad0dced6812",
+    "connections": {
+      "webIDE": "https://bd8fba649be14ed9b7668ad0dced6812.codebuddy.cloudstudio.club",
+      "preview": "https://bd8fba649be14ed9b7668ad0dced6812--{port}.codebuddy.cloudstudio.club",
+      "api": "https://bd8fba649be14ed9b7668ad0dced6812--api.codebuddy.cloudstudio.club",
+      "pty": "https://bd8fba649be14ed9b7668ad0dced6812--pty.codebuddy.cloudstudio.club"
+    }
+  },
+  "config": {
+    "api": "https://bd8fba649be14ed9b7668ad0dced6812--api.codebuddy.cloudstudio.club",
+    "pty": "https://bd8fba649be14ed9b7668ad0dced6812--pty.codebuddy.cloudstudio.club",
+    "region": "ap-shanghai",
+    "spaceKey": "bd8fba649be14ed9b7668ad0dced6812"
+  }
+}

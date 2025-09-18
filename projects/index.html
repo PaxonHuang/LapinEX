@@ -1,0 +1,348 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>项目展示 | LapinEX-70X 计算机协会</title><meta name="author" content="黄浦城"><meta name="copyright" content="黄浦城"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="项目展示🎯 项目概览LapinEX-70X 计算机协会致力于开发高质量的技术项目，涵盖前端、后端、移动端、嵌入式等多个领域。 📱 微信小程序项目校园二手交易平台 项目描述：为校园师生提供二手物品交易服务 技术栈：微信小程序、云开发、云数据库 功能特点： 商品发布和浏览 用户认证和评价系统 实时聊天功能 支付和订单管理   项目成果：用户数1000+，日活跃用户200+ 团队成员：5人，开发周期">
+<meta property="og:type" content="website">
+<meta property="og:title" content="项目展示">
+<meta property="og:url" content="https://paxonhuang.github.io/LapinEX/projects/index.html">
+<meta property="og:site_name" content="LapinEX-70X 计算机协会">
+<meta property="og:description" content="项目展示🎯 项目概览LapinEX-70X 计算机协会致力于开发高质量的技术项目，涵盖前端、后端、移动端、嵌入式等多个领域。 📱 微信小程序项目校园二手交易平台 项目描述：为校园师生提供二手物品交易服务 技术栈：微信小程序、云开发、云数据库 功能特点： 商品发布和浏览 用户认证和评价系统 实时聊天功能 支付和订单管理   项目成果：用户数1000+，日活跃用户200+ 团队成员：5人，开发周期">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://paxonhuang.github.io/LapinEX/img/logo.svg">
+<meta property="article:published_time" content="2023-12-31T16:00:00.000Z">
+<meta property="article:modified_time" content="2025-08-11T10:37:41.824Z">
+<meta property="article:author" content="黄浦城">
+<meta property="article:tag" content="计算机协会, 技术学习, 项目开发, 职业发展, 微信小程序, 前端开发, 后端开发, 嵌入式开发, 408考研, 大厂就业">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://paxonhuang.github.io/LapinEX/img/logo.svg"><script type="application/ld+json"></script><link rel="shortcut icon" href="/LapinEX/img/favicon.ico"><link rel="canonical" href="https://paxonhuang.github.io/LapinEX/projects/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/LapinEX/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css"><script>
+    (() => {
+      
+    const saveToLocal = {
+      set: (key, value, ttl) => {
+        if (!ttl) return
+        const expiry = Date.now() + ttl * 86400000
+        localStorage.setItem(key, JSON.stringify({ value, expiry }))
+      },
+      get: key => {
+        const itemStr = localStorage.getItem(key)
+        if (!itemStr) return undefined
+        const { value, expiry } = JSON.parse(itemStr)
+        if (Date.now() > expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return value
+      }
+    }
+
+    window.btf = {
+      saveToLocal,
+      getScript: (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        Object.entries(attr).forEach(([key, val]) => script.setAttribute(key, val))
+        script.onload = script.onreadystatechange = () => {
+          if (!script.readyState || /loaded|complete/.test(script.readyState)) resolve()
+        }
+        script.onerror = reject
+        document.head.appendChild(script)
+      }),
+      getCSS: (url, id) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onload = link.onreadystatechange = () => {
+          if (!link.readyState || /loaded|complete/.test(link.readyState)) resolve()
+        }
+        link.onerror = reject
+        document.head.appendChild(link)
+      }),
+      addGlobalFn: (key, fn, name = false, parent = window) => {
+        if (!false && key.startsWith('pjax')) return
+        const globalFn = parent.globalFn || {}
+        globalFn[key] = globalFn[key] || {}
+        globalFn[key][name || Object.keys(globalFn[key]).length] = fn
+        parent.globalFn = globalFn
+      }
+    }
+  
+      
+      const activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', 'undefined')
+        }
+      }
+      const activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', 'undefined')
+        }
+      }
+
+      btf.activateDarkMode = activateDarkMode
+      btf.activateLightMode = activateLightMode
+
+      const theme = saveToLocal.get('theme')
+    
+          theme === 'dark' ? activateDarkMode() : theme === 'light' ? activateLightMode() : null
+        
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        document.documentElement.classList.toggle('hide-aside', asideStatus === 'hide')
+      }
+    
+      
+    const detectApple = () => {
+      if (/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)) {
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+  
+    })()
+  </script><script>const GLOBAL_CONFIG = {
+  root: '/LapinEX/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false,"highlightFullpage":false,"highlightMacStyle":false},
+  copy: {
+    success: '复制成功',
+    error: '复制失败',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'null',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid/dist/infinitegrid.min.js',
+    buttonText: '加载更多'
+  },
+  isPhotoFigcaption: false,
+  islazyloadPlugin: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '项目展示',
+  isHighlightShrink: false,
+  isToc: false,
+  pageType: 'page'
+}</script><meta name="generator" content="Hexo 7.3.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img text-center"><img src="/LapinEX/img/logo.svg" onerror="this.onerror=null;this.src='/LapinEX/img/friend_404.gif'" alt="avatar"/></div><div class="site-data text-center"><a href="/LapinEX/archives/"><div class="headline">文章</div><div class="length-num">5</div></a><a href="/LapinEX/tags/"><div class="headline">标签</div><div class="length-num">3</div></a><a href="/LapinEX/categories/"><div class="headline">分类</div><div class="length-num">1</div></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/LapinEX/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><span class="site-page group"><span> 公司介绍</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/LapinEX/about/"><i class="fa-fw fas fa-users"></i><span> LapinEX-70X是搞啥的？</span></a></li><li><a class="site-page child" href="/LapinEX/teams/"><i class="fa-fw fas fa-code"></i><span> 技术团队都有哪些帅哥?</span></a></li><li><a class="site-page child" href="/LapinEX/contact/"><i class="fa-fw fas fa-envelope"></i><span> 如何联系我们？</span></a></li></ul></div><div class="menus_item"><span class="site-page group"><span> 加入我们</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/LapinEX/jobs/"><i class="fa-fw fas fa-briefcase"></i><span> 招聘岗位(含薪资)</span></a></li><li><a class="site-page child" href="/LapinEX/jobs/application-form/"><i class="fa-fw fas fa-download"></i><span> 申请表下载</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/LapinEX/graduate/"><i class="fa-fw fas fa-graduation-cap"></i><span> 408考研指导</span></a></div><div class="menus_item"><a class="site-page" href="/LapinEX/employment/"><i class="fa-fw fas fa-building"></i><span> 大厂就业</span></a></div><div class="menus_item"><a class="site-page" href="/LapinEX/projects/"><i class="fa-fw fas fa-rocket"></i><span> 盈利项目展示</span></a></div></div></div></div><div class="page type-projects" id="body-wrap"><header class="not-home-page" id="page-header"><nav id="nav"><span id="blog-info"><a class="nav-site-title" href="/LapinEX/"><span class="site-name">LapinEX-70X 计算机协会</span></a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/LapinEX/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><span class="site-page group"><span> 公司介绍</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/LapinEX/about/"><i class="fa-fw fas fa-users"></i><span> LapinEX-70X是搞啥的？</span></a></li><li><a class="site-page child" href="/LapinEX/teams/"><i class="fa-fw fas fa-code"></i><span> 技术团队都有哪些帅哥?</span></a></li><li><a class="site-page child" href="/LapinEX/contact/"><i class="fa-fw fas fa-envelope"></i><span> 如何联系我们？</span></a></li></ul></div><div class="menus_item"><span class="site-page group"><span> 加入我们</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/LapinEX/jobs/"><i class="fa-fw fas fa-briefcase"></i><span> 招聘岗位(含薪资)</span></a></li><li><a class="site-page child" href="/LapinEX/jobs/application-form/"><i class="fa-fw fas fa-download"></i><span> 申请表下载</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/LapinEX/graduate/"><i class="fa-fw fas fa-graduation-cap"></i><span> 408考研指导</span></a></div><div class="menus_item"><a class="site-page" href="/LapinEX/employment/"><i class="fa-fw fas fa-building"></i><span> 大厂就业</span></a></div><div class="menus_item"><a class="site-page" href="/LapinEX/projects/"><i class="fa-fw fas fa-rocket"></i><span> 盈利项目展示</span></a></div></div><div id="toggle-menu"><span class="site-page"><i class="fas fa-bars fa-fw"></i></span></div></div></nav><div id="page-site-info"><h1 id="site-title">项目展示</h1></div></header><main class="layout" id="content-inner"><div id="page"><div class="container" id="article-container"><h1 id="项目展示"><a href="#项目展示" class="headerlink" title="项目展示"></a>项目展示</h1><h2 id="🎯-项目概览"><a href="#🎯-项目概览" class="headerlink" title="🎯 项目概览"></a>🎯 项目概览</h2><p>LapinEX-70X 计算机协会致力于开发高质量的技术项目，涵盖前端、后端、移动端、嵌入式等多个领域。</p>
+<h2 id="📱-微信小程序项目"><a href="#📱-微信小程序项目" class="headerlink" title="📱 微信小程序项目"></a>📱 微信小程序项目</h2><h3 id="校园二手交易平台"><a href="#校园二手交易平台" class="headerlink" title="校园二手交易平台"></a>校园二手交易平台</h3><ul>
+<li><strong>项目描述</strong>：为校园师生提供二手物品交易服务</li>
+<li><strong>技术栈</strong>：微信小程序、云开发、云数据库</li>
+<li><strong>功能特点</strong>：<ul>
+<li>商品发布和浏览</li>
+<li>用户认证和评价系统</li>
+<li>实时聊天功能</li>
+<li>支付和订单管理</li>
+</ul>
+</li>
+<li><strong>项目成果</strong>：用户数1000+，日活跃用户200+</li>
+<li><strong>团队成员</strong>：5人，开发周期3个月</li>
+</ul>
+<h3 id="校园活动报名系统"><a href="#校园活动报名系统" class="headerlink" title="校园活动报名系统"></a>校园活动报名系统</h3><ul>
+<li><strong>项目描述</strong>：管理校园各类活动的报名和签到</li>
+<li><strong>技术栈</strong>：微信小程序、Node.js、MySQL</li>
+<li><strong>功能特点</strong>：<ul>
+<li>活动发布和管理</li>
+<li>在线报名和支付</li>
+<li>二维码签到</li>
+<li>数据统计和分析</li>
+</ul>
+</li>
+<li><strong>项目成果</strong>：服务50+个社团，处理报名10000+</li>
+<li><strong>团队成员</strong>：4人，开发周期2个月</li>
+</ul>
+<h2 id="💻-Web全栈项目"><a href="#💻-Web全栈项目" class="headerlink" title="💻 Web全栈项目"></a>💻 Web全栈项目</h2><h3 id="在线学习平台"><a href="#在线学习平台" class="headerlink" title="在线学习平台"></a>在线学习平台</h3><ul>
+<li><strong>项目描述</strong>：提供在线课程学习和考试系统</li>
+<li><strong>技术栈</strong>：React、Node.js、MongoDB、Redis</li>
+<li><strong>功能特点</strong>：<ul>
+<li>课程管理和播放</li>
+<li>在线考试和评分</li>
+<li>学习进度跟踪</li>
+<li>讨论区和问答</li>
+</ul>
+</li>
+<li><strong>项目成果</strong>：注册用户5000+，课程100+</li>
+<li><strong>团队成员</strong>：8人，开发周期6个月</li>
+</ul>
+<h3 id="企业管理系统"><a href="#企业管理系统" class="headerlink" title="企业管理系统"></a>企业管理系统</h3><ul>
+<li><strong>项目描述</strong>：中小企业的综合管理平台</li>
+<li><strong>技术栈</strong>：Vue.js、Spring Boot、MySQL、Redis</li>
+<li><strong>功能特点</strong>：<ul>
+<li>员工管理</li>
+<li>财务管理</li>
+<li>项目管理</li>
+<li>数据分析和报表</li>
+</ul>
+</li>
+<li><strong>项目成果</strong>：服务20+家企业</li>
+<li><strong>团队成员</strong>：6人，开发周期4个月</li>
+</ul>
+<h2 id="🔌-嵌入式项目"><a href="#🔌-嵌入式项目" class="headerlink" title="🔌 嵌入式项目"></a>🔌 嵌入式项目</h2><h3 id="LapinEX智能家居控制系统"><a href="#LapinEX智能家居控制系统" class="headerlink" title="LapinEX智能家居控制系统"></a>LapinEX智能家居控制系统</h3><ul>
+<li><strong>项目描述</strong>：基于ESP32的智能家居控制中心</li>
+<li><strong>技术栈</strong>：ESP32、Arduino、MQTT、微信小程序</li>
+<li><strong>功能特点</strong>：<ul>
+<li>温湿度监测</li>
+<li>灯光控制</li>
+<li>安防监控</li>
+<li>远程控制</li>
+</ul>
+</li>
+<li><strong>项目成果</strong>：获得校级创新大赛一等奖</li>
+<li><strong>团队成员</strong>：3人，开发周期2个月</li>
+</ul>
+<h3 id="环境监测设备"><a href="#环境监测设备" class="headerlink" title="环境监测设备"></a>环境监测设备</h3><ul>
+<li><strong>项目描述</strong>：实时监测环境参数的物联网设备</li>
+<li><strong>技术栈</strong>：STM32、传感器、LoRa、云平台</li>
+<li><strong>功能特点</strong>：<ul>
+<li>多参数监测</li>
+<li>数据上传和分析</li>
+<li>异常报警</li>
+<li>历史数据查询</li>
+</ul>
+</li>
+<li><strong>项目成果</strong>：部署在校园多个区域</li>
+<li><strong>团队成员</strong>：4人，开发周期3个月</li>
+</ul>
+<h2 id="🤖-人工智能项目"><a href="#🤖-人工智能项目" class="headerlink" title="🤖 人工智能项目"></a>🤖 人工智能项目</h2><h3 id="智能问答系统"><a href="#智能问答系统" class="headerlink" title="智能问答系统"></a>智能问答系统</h3><ul>
+<li><strong>项目描述</strong>：基于自然语言处理的问答系统</li>
+<li><strong>技术栈</strong>：Python、TensorFlow、BERT、Flask</li>
+<li><strong>功能特点</strong>：<ul>
+<li>问题理解和分类</li>
+<li>答案生成和检索</li>
+<li>多轮对话</li>
+<li>知识图谱构建</li>
+</ul>
+</li>
+<li><strong>项目成果</strong>：准确率85%+</li>
+<li><strong>团队成员</strong>：5人，开发周期4个月</li>
+</ul>
+<h3 id="图像识别应用"><a href="#图像识别应用" class="headerlink" title="图像识别应用"></a>图像识别应用</h3><ul>
+<li><strong>项目描述</strong>：基于深度学习的图像识别系统</li>
+<li><strong>技术栈</strong>：Python、PyTorch、OpenCV、Flask</li>
+<li><strong>功能特点</strong>：<ul>
+<li>物体检测和识别</li>
+<li>人脸识别</li>
+<li>文字识别</li>
+<li>图像分类</li>
+</ul>
+</li>
+<li><strong>项目成果</strong>：识别准确率90%+</li>
+<li><strong>团队成员</strong>：4人，开发周期3个月</li>
+</ul>
+<h2 id="📊-数据分析项目"><a href="#📊-数据分析项目" class="headerlink" title="📊 数据分析项目"></a>📊 数据分析项目</h2><h3 id="校园数据分析平台"><a href="#校园数据分析平台" class="headerlink" title="校园数据分析平台"></a>校园数据分析平台</h3><ul>
+<li><strong>项目描述</strong>：分析校园各类数据的可视化平台</li>
+<li><strong>技术栈</strong>：Python、Pandas、Matplotlib、Django</li>
+<li><strong>功能特点</strong>：<ul>
+<li>数据采集和清洗</li>
+<li>数据分析和挖掘</li>
+<li>可视化展示</li>
+<li>预测分析</li>
+</ul>
+</li>
+<li><strong>项目成果</strong>：为学校决策提供数据支持</li>
+<li><strong>团队成员</strong>：6人，开发周期5个月</li>
+</ul>
+<h2 id="🎨-设计项目"><a href="#🎨-设计项目" class="headerlink" title="🎨 设计项目"></a>🎨 设计项目</h2><h3 id="协会品牌设计"><a href="#协会品牌设计" class="headerlink" title="协会品牌设计"></a>协会品牌设计</h3><ul>
+<li><strong>项目描述</strong>：LapinEX-70X 品牌视觉设计</li>
+<li><strong>设计内容</strong>：<ul>
+<li>Logo设计</li>
+<li>宣传海报</li>
+<li>网站界面</li>
+<li>产品包装</li>
+</ul>
+</li>
+<li><strong>设计理念</strong>：现代、科技、创新</li>
+<li><strong>项目成果</strong>：获得广泛认可</li>
+<li><strong>团队成员</strong>：3人，设计周期1个月</li>
+</ul>
+<h2 id="🏆-项目荣誉"><a href="#🏆-项目荣誉" class="headerlink" title="🏆 项目荣誉"></a>🏆 项目荣誉</h2><h3 id="竞赛获奖"><a href="#竞赛获奖" class="headerlink" title="竞赛获奖"></a>竞赛获奖</h3><ul>
+<li><strong>全国大学生计算机设计大赛</strong>：一等奖1项，二等奖2项</li>
+<li><strong>互联网+创新创业大赛</strong>：省级金奖1项，银奖2项</li>
+<li><strong>挑战杯创新创业大赛</strong>：校级特等奖1项，一等奖2项</li>
+</ul>
+<h3 id="专利申请"><a href="#专利申请" class="headerlink" title="专利申请"></a>专利申请</h3><ul>
+<li><strong>发明专利</strong>：2项（智能家居控制系统、环境监测方法）</li>
+<li><strong>实用新型专利</strong>：3项（传感器装置、控制模块、通信模块）</li>
+<li><strong>软件著作权</strong>：5项（各类管理系统和应用程序）</li>
+</ul>
+<h2 id="🚀-项目特色"><a href="#🚀-项目特色" class="headerlink" title="🚀 项目特色"></a>🚀 项目特色</h2><h3 id="技术创新"><a href="#技术创新" class="headerlink" title="技术创新"></a>技术创新</h3><ul>
+<li>采用最新的技术栈和开发框架</li>
+<li>注重代码质量和系统性能</li>
+<li>持续优化和迭代更新</li>
+</ul>
+<h3 id="团队协作"><a href="#团队协作" class="headerlink" title="团队协作"></a>团队协作</h3><ul>
+<li>采用敏捷开发方法</li>
+<li>定期代码审查和分享</li>
+<li>良好的团队沟通和协作</li>
+</ul>
+<h3 id="用户导向"><a href="#用户导向" class="headerlink" title="用户导向"></a>用户导向</h3><ul>
+<li>深入了解用户需求</li>
+<li>注重用户体验设计</li>
+<li>持续收集用户反馈</li>
+</ul>
+<h2 id="📞-项目合作"><a href="#📞-项目合作" class="headerlink" title="📞 项目合作"></a>📞 项目合作</h2><h3 id="合作方式"><a href="#合作方式" class="headerlink" title="合作方式"></a>合作方式</h3><ul>
+<li><strong>技术咨询</strong>：提供技术方案和架构设计</li>
+<li><strong>项目开发</strong>：承接各类技术项目</li>
+<li><strong>人才培养</strong>：提供技术培训和指导</li>
+</ul>
+<h3 id="合作领域"><a href="#合作领域" class="headerlink" title="合作领域"></a>合作领域</h3><ul>
+<li>微信小程序开发</li>
+<li>Web全栈开发</li>
+<li>嵌入式系统开发</li>
+<li>人工智能应用</li>
+<li>数据分析平台</li>
+</ul>
+<h3 id="联系方式"><a href="#联系方式" class="headerlink" title="联系方式"></a>联系方式</h3><ul>
+<li><strong>邮箱</strong>：<a href="mailto:&#x70;&#x72;&#111;&#x6a;&#101;&#x63;&#x74;&#115;&#64;&#108;&#x61;&#112;&#105;&#110;&#x65;&#x78;&#46;&#x63;&#x6f;&#x6d;">projects@lapinex.com</a></li>
+<li><strong>QQ群</strong>：123456789</li>
+<li><strong>微信公众号</strong>：LapinEX-70X</li>
+</ul>
+<hr>
+<p><em>用技术创造价值，用创新改变世界！</em></p>
+</div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info text-center"><div class="avatar-img"><img src="/LapinEX/img/logo.svg" onerror="this.onerror=null;this.src='/LapinEX/img/friend_404.gif'" alt="avatar"/></div><div class="author-info-name">黄浦城</div><div class="author-info-description">LapinEX-70X</div><div class="site-data"><a href="/LapinEX/archives/"><div class="headline">文章</div><div class="length-num">5</div></a><a href="/LapinEX/tags/"><div class="headline">标签</div><div class="length-num">3</div></a><a href="/LapinEX/categories/"><div class="headline">分类</div><div class="length-num">1</div></a></div><a id="card-info-btn" href="/join/"><i class="fab fa-github"></i><span>加入我们</span></a><div class="card-info-social-icons"><a class="social-icon" href="https://paxonhuang.github.io/LapinEX/teams/" target="_blank" title="fab fa-github"><i class="GitHub"></i></a><a class="social-icon" href="https://qm.qq.com/cgi-bin/qm/qr?k=xxx" target="_blank" title="fab fa-qq"><i class="QQ群"></i></a><a class="social-icon" href="/LapinEX/wechat/" target="_blank" title="fab fa-weixin"><i class="微信公众号"></i></a><a class="social-icon" href="mailto:lapinex@example.com" target="_blank" title="fas fa-envelope"><i class="邮箱"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">🎉 欢迎加入 LapinEX-70X 灵兔共语！我们致力于科研成果转化、培养优秀计算机人才。</div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/LapinEX/2025/08/24/SLRYaoZonggui/" title="SLRYaoZonggui">SLRYaoZonggui</a><time datetime="2025-08-24T14:42:53.000Z" title="发表于 2025-08-24 22:42:53">2025-08-24</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/LapinEX/2025/08/24/BussinessProfit/" title="LapinEX-70X 商业模式详解">LapinEX-70X 商业模式详解</a><time datetime="2025-08-24T13:19:09.000Z" title="发表于 2025-08-24 21:19:09">2025-08-24</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/LapinEX/2025/08/23/Yaozonggui/" title="无标题">无标题</a><time datetime="2025-08-23T10:24:04.732Z" title="发表于 2025-08-23 18:24:04">2025-08-23</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/LapinEX/2025/08/10/LapinEX/" title="LapinEX">LapinEX</a><time datetime="2025-08-10T10:23:46.000Z" title="发表于 2025-08-10 18:23:46">2025-08-10</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/LapinEX/2025/08/10/hello-world/" title="Hello World">Hello World</a><time datetime="2025-08-10T08:34:54.199Z" title="发表于 2025-08-10 16:34:54">2025-08-10</time></div></div></div></div><div class="card-widget card-categories"><div class="item-headline">
+            <i class="fas fa-folder-open"></i>
+            <span>分类</span>
+            
+          </div>
+          <ul class="card-category-list" id="aside-cat-list">
+            <li class="card-category-list-item "><a class="card-category-list-link" href="/LapinEX/categories/%E5%95%86%E4%B8%9A%E5%88%86%E6%9E%90/"><span class="card-category-list-name">商业分析</span><span class="card-category-list-count">1</span></a></li>
+          </ul></div><div class="card-widget card-tags"><div class="item-headline"><i class="fas fa-tags"></i><span>标签</span></div><div class="card-tag-cloud"><a href="/LapinEX/tags/%E7%A4%BE%E4%BC%9A%E4%BB%B7%E5%80%BC/" style="font-size: 1.1em; color: #999">社会价值</a> <a href="/LapinEX/tags/%E7%A7%91%E6%8A%80%E5%88%9B%E6%96%B0/" style="font-size: 1.1em; color: #999">科技创新</a> <a href="/LapinEX/tags/%E5%95%86%E4%B8%9A%E6%A8%A1%E5%BC%8F/" style="font-size: 1.1em; color: #999">商业模式</a></div></div><div class="card-widget card-archives">
+    <div class="item-headline">
+      <i class="fas fa-archive"></i>
+      <span>归档</span>
+      
+    </div>
+  
+    <ul class="card-archive-list">
+      
+        <li class="card-archive-list-item">
+          <a class="card-archive-list-link" href="/LapinEX/archives/2025/08/">
+            <span class="card-archive-list-date">
+              八月 2025
+            </span>
+            <span class="card-archive-list-count">5</span>
+          </a>
+        </li>
+      
+    </ul>
+  </div><div class="card-widget card-webinfo"><div class="item-headline"><i class="fas fa-chart-line"></i><span>网站信息</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">文章数目 :</div><div class="item-count">5</div></div><div class="webinfo-item"><div class="item-name">本站访客数 :</div><div class="item-count" id="busuanzi_value_site_uv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">本站总浏览量 :</div><div class="item-count" id="busuanzi_value_site_pv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">最后更新时间 :</div><div class="item-count" id="last-push-date" data-lastPushDate="2025-09-09T19:12:27.466Z"><i class="fa-solid fa-spinner fa-spin"></i></div></div></div></div></div></div></main><footer id="footer"><div class="footer-other"><div class="footer-copyright"><span class="copyright">&copy;&nbsp;2024 - 2025 By 黄浦城</span><span class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo 7.3.0</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly 5.4.3</a></span></div><div class="footer_custom_text">LapinEX-70X 灵兔共语 - 培养优秀计算机人才</div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="darkmode" type="button" title="日间和夜间模式切换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/LapinEX/js/utils.js"></script><script src="/LapinEX/js/main.js"></script><div class="js-pjax"></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
